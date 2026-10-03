@@ -623,6 +623,64 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .dock .dt small{display:block;font:500 12px/1.2 var(--fb);color:var(--mute)}
 .dock .btn{padding:12px 16px;font-size:14px}
 
+
+/* ---------- visuals v2 ---------- */
+.vb{display:inline-flex;gap:7px;align-items:flex-start}
+.vb>.ic{color:var(--red);width:16px;height:16px;margin-top:1px}
+.vb>span{display:block}
+.chip .ic{width:14px;height:14px;margin-right:5px}
+.tv .tvh{align-items:center}
+.tv .ti{width:32px;height:32px;border-radius:50%;background:#262626;display:inline-grid;place-items:center;color:var(--red);flex:none;margin-right:10px}
+.tv .ti .ic{width:17px;height:17px}
+.tv .tvh b{flex:1}
+.tv.on .ti{background:var(--red);color:var(--cream)}
+.tr-row{display:flex;gap:14px;align-items:center;margin-top:22px}
+.tr-row .tr-sent{margin:0;flex:1}
+.tr-pic{flex:none;width:clamp(78px,22vw,110px);aspect-ratio:1;border-radius:50%;background:var(--red);color:var(--cream);display:grid;place-items:center;position:relative;box-shadow:0 0 0 4px var(--cream),0 6px 0 4px rgba(0,0,0,.35)}
+.tr-pic::before{content:"";position:absolute;inset:0;border-radius:50%;background-image:radial-gradient(rgba(0,0,0,.25) 1.2px,transparent 1.7px);background-size:6px 6px}
+.tr-pic .ic{position:relative;width:52%;height:52%;stroke-width:1.8}
+.ln .lb{position:absolute;right:-6px;top:-14px;width:40px;height:40px;border-radius:50%;background:var(--red);color:var(--cream);display:grid;place-items:center;box-shadow:0 3px 0 rgba(0,0,0,.25);rotate:8deg}
+.ln .lb .ic{width:20px;height:20px}
+.ln.same .lb{background:var(--cream);color:var(--ink)}
+.rl .ri{position:absolute;right:14px;top:16px;width:50px;height:50px;color:var(--red);stroke-width:1.6;opacity:.9}
+.sv{display:inline-flex;align-items:center;gap:6px}
+.sv .ic{width:14px;height:14px}
+.dup .fc .di{position:absolute;right:16px;top:16px;width:58px;height:58px;color:var(--red);stroke-width:1.5}
+.dup .bc p .ic{color:var(--red);margin-right:4px}
+.pin .ic{display:block;width:20px;height:20px;margin:0 auto 4px}
+.g-ico{float:right;width:64px;height:64px;border-radius:50%;background:var(--ink);color:var(--cream);display:grid;place-items:center;margin:10px 0 0 10px;box-shadow:0 0 0 3px var(--red)}
+.g-ico .ic{width:30px;height:30px}
+.qi{float:right;width:46px;height:46px;color:var(--red);stroke-width:1.6;margin:0 0 6px 10px}
+.nt .nic{position:absolute;right:16px;top:22px;width:44px;height:44px;color:var(--red);stroke-width:1.6}
+.ch h4 .ic{margin-right:8px;vertical-align:-.1em}
+.wb-pic{position:absolute;right:14px;top:-26px;width:62px;height:62px;border-radius:50%;background:var(--red);color:var(--cream);display:grid;place-items:center;box-shadow:0 0 0 3px var(--cream)}
+.wb-pic .ic{width:30px;height:30px}
+.tl-dot .ic{width:16px;height:16px}
+.huber{position:relative;background:#fbfaf6;padding:12px 12px 14px;width:min(260px,66vw);rotate:-3deg;box-shadow:0 12px 26px rgba(0,0,0,.28);margin:10px 0 40px 6px}
+.huber .tape{left:50%;top:-12px;margin-left:-48px;rotate:3deg}
+.huber .hph{position:relative;aspect-ratio:5/6;background:var(--paper2) var(--nl);overflow:hidden}
+.huber .hph svg{position:absolute;inset:6% 4% 0;width:92%;height:94%}
+.huber .sig{font:700 28px/1 var(--fh);text-align:center;margin-top:8px;color:var(--ink)}
+.bubble{position:absolute;right:-14px;top:-30px;z-index:5;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:20px;padding:8px 13px;font:700 19px/1.05 var(--fd);text-transform:uppercase;rotate:6deg;max-width:180px;box-shadow:3px 3px 0 var(--red)}
+.bubble::after{content:"";position:absolute;left:26px;bottom:-14px;width:18px;height:18px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);rotate:45deg;translate:0 -4px}
+.hub-row{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 26px}
+.hub-row .lines{flex:1 1 260px}
+.post .paket{position:absolute;right:10px;bottom:8px;width:110px;height:100px;rotate:-8deg}
+.post .bgi{position:absolute;right:-18px;bottom:-18px;width:150px;height:150px;opacity:.2;stroke-width:1.4;color:var(--ink)}
+.shots{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px var(--gut) 26px;margin:0 calc(var(--gut)*-1) 24px;scrollbar-width:none}
+.shots::-webkit-scrollbar{display:none}
+.shot{flex:0 0 80%;max-width:420px;scroll-snap-align:center;position:relative;background:#fbfaf6;padding:8px 8px 12px;box-shadow:0 10px 24px rgba(0,0,0,.45)}
+.shot:nth-child(odd){rotate:-1.4deg}.shot:nth-child(even){rotate:1.2deg}
+.shot img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.shot .tape{left:50%;top:-13px;margin-left:-48px;rotate:-3deg}
+.shot .sig{font:700 22px/1 var(--fh);color:var(--ink);margin-top:8px;padding-left:4px;display:flex;align-items:center;gap:8px}
+.shot .sig .ic{color:var(--red)}
+.hdeco{display:flex;gap:10px;margin:0 0 16px}
+.hdeco span{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:var(--cream);rotate:-6deg;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.hdeco span:nth-child(2){background:var(--cream);color:var(--ink);rotate:5deg}
+.hdeco span:nth-child(3){background:#2a2a2a;rotate:-2deg}
+.hdeco .ic{width:22px;height:22px}
+
 /* ---------- larger screens ---------- */
 @media (min-width:760px){
   :root{--gut:32px}
@@ -750,8 +808,80 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 <symbol id="i-circle-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
 <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
 <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+<symbol id="i-tree-palm" viewBox="0 0 24 24"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></symbol>
+<symbol id="i-party-popper" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></symbol>
+<symbol id="i-bug" viewBox="0 0 24 24"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></symbol>
+<symbol id="i-dog" viewBox="0 0 24 24"><path d="M11.25 16.25h1.5L12 17z"/><path d="M16 14v.5"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"/><path d="M8 14v.5"/><path d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+<symbol id="i-pill" viewBox="0 0 24 24"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-cloud-rain" viewBox="0 0 24 24"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+<symbol id="i-ghost" viewBox="0 0 24 24"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+<symbol id="i-shopping-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+<symbol id="i-messages-square" viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></symbol>
+<symbol id="i-angry" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M7.5 8 10 9"/><path d="m14 9 2.5-1"/><path d="M9 10h.01"/><path d="M15 10h.01"/></symbol>
+<symbol id="i-laugh" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></symbol>
+<symbol id="i-heart-crack" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="m12 13-1-1 2-2-3-3 2-2"/></symbol>
+<symbol id="i-medal" viewBox="0 0 24 24"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+<symbol id="i-shirt" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></symbol>
+<symbol id="i-bike" viewBox="0 0 24 24"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></symbol>
+<symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+<symbol id="i-key-round" viewBox="0 0 24 24"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+<symbol id="i-alarm-clock" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></symbol>
+<symbol id="i-hand-heart" viewBox="0 0 24 24"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"/></symbol>
+<symbol id="i-umbrella" viewBox="0 0 24 24"><path d="M22 12a10.06 10.06 1 0 0-20 0Z"/><path d="M12 12v8a2 2 0 0 0 4 0"/><path d="M12 2v1"/></symbol>
+<symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+<symbol id="i-swords" viewBox="0 0 24 24"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></symbol>
+<symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+<symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+<symbol id="i-newspaper" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></symbol>
+<symbol id="i-building-2" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+<symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+<symbol id="i-siren" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></symbol>
+<symbol id="i-glasses" viewBox="0 0 24 24"><circle cx="6" cy="15" r="4"/><circle cx="18" cy="15" r="4"/><path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2"/><path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2"/></symbol>
+<symbol id="i-hard-hat" viewBox="0 0 24 24"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/></symbol>
+<symbol id="i-tv" viewBox="0 0 24 24"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></symbol>
+<symbol id="i-coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></symbol>
+<symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></symbol>
+<symbol id="i-cigarette-off" viewBox="0 0 24 24"><path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13"/><path d="M18 8c0-2.5-2-2.5-2-5"/><path d="m2 2 20 20"/><path d="M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.866"/><path d="M22 8c0-2.5-2-2.5-2-5"/><path d="M7 12v4"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+<symbol id="i-shovel" viewBox="0 0 24 24"><path d="M2 22v-5l5-5 5 5-5 5z"/><path d="M9.5 14.5 16 8"/><path d="m17 2 5 5-.5.5a3.53 3.53 0 0 1-5 0s0 0 0 0a3.53 3.53 0 0 1 0-5L17 2"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+<symbol id="i-cat" viewBox="0 0 24 24"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></symbol>
+<symbol id="i-fish" viewBox="0 0 24 24"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"/><path d="M18 12v.5"/><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"/><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"/><path d="M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4"/><path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98"/></symbol>
+<symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+<symbol id="i-calculator" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></symbol>
+<symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+<symbol id="i-users-2" viewBox="0 0 24 24"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+<symbol id="i-tent" viewBox="0 0 24 24"><path d="M3.5 21 14 3"/><path d="M20.5 21 10 3"/><path d="M15.5 21 12 15l-3.5 6"/><path d="M2 21h20"/></symbol>
+<symbol id="i-armchair" viewBox="0 0 24 24"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></symbol>
+<symbol id="i-drama" viewBox="0 0 24 24"><path d="M10 11h.01"/><path d="M14 6h.01"/><path d="M18 6h.01"/><path d="M6.5 13.1h.01"/><path d="M22 5c0 9-4 12-6 12s-6-3-6-12c0-2 2-3 6-3s6 1 6 3"/><path d="M17.4 9.9c-.8.8-2 .8-2.8 0"/><path d="M10.1 7.1C9 7.2 7.7 7.7 6 8.6c-3.5 2-4.7 3.9-3.7 5.6 4.5 7.8 9.5 8.4 11.2 7.4.9-.5 1.9-2.1 1.9-4.7"/><path d="M9.1 16.5c.3-1.1 1.4-1.7 2.4-1.4"/></symbol>
+<symbol id="i-gavel" viewBox="0 0 24 24"><path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-circle-dollar-sign" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></symbol>
+<symbol id="i-dices" viewBox="0 0 24 24"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></symbol>
+<symbol id="i-flower-2" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/><circle cx="12" cy="8" r="2"/><path d="M12 10v12"/><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/></symbol>
+<symbol id="i-droplets" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+<symbol id="i-wind" viewBox="0 0 24 24"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></symbol>
+<symbol id="i-school" viewBox="0 0 24 24"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"/><path d="M18 5v17"/><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></symbol>
 
 <symbol id="stk" viewBox="0 0 120 120"><polygon points="116.0,60.0 105.8,70.5 110.5,84.3 96.7,89.3 94.9,103.8 80.4,102.3 72.5,114.6 60.0,107.0 47.5,114.6 39.6,102.3 25.1,103.8 23.3,89.3 9.5,84.3 14.2,70.5 4.0,60.0 14.2,49.5 9.5,35.7 23.3,30.7 25.1,16.2 39.6,17.7 47.5,5.4 60.0,13.0 72.5,5.4 80.4,17.7 94.9,16.2 96.7,30.7 110.5,35.7 105.8,49.5" fill="#E3232C" stroke="#F2EFE9" stroke-width="7" stroke-linejoin="round" paint-order="stroke"/><path d="M37 42l15 13M52 42L37 55" stroke="#141414" stroke-width="6" stroke-linecap="round"/><circle cx="79" cy="49" r="7.5" fill="#141414"/><path d="M34 67 Q60 98 88 65 Z" fill="#141414"/><path d="M39 70.5 H83" stroke="#F2EFE9" stroke-width="4"/><path d="M57 82 q7 12 16 1 Z" fill="#F2EFE9"/><g transform="rotate(38 90 30)"><rect x="76" y="25" width="30" height="11" rx="5" fill="#F2EFE9"/></g><g transform="rotate(-38 90 30)"><rect x="76" y="25" width="30" height="11" rx="5" fill="#F2EFE9" stroke="#141414" stroke-width="1"/></g></symbol>
+<defs><pattern id="ht" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.4" fill="#141414"/></pattern></defs>
 <symbol id="st" viewBox="0 0 24 24"><path d="M12 0l2.6 8.4L24 12l-9.4 3.6L12 24l-2.6-8.4L0 12l9.4-3.6z"/></symbol>
 </svg>
 
@@ -810,10 +940,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <span class="oval"><svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M42,60 C10,47 20,14 120,9 C222,4 297,17 293,39 C289,63 214,74 140,73 C64,72 11,63 14,44 C17,27 72,15 172,15"/><path pathLength="1" d="M70,69 C160,80 262,70 288,50"/></svg>Herr Huber, 70 лет</span>
       <span class="meta">2024 — лестница, третий этаж</span>
     </header>
+    <div class="hub-row">
+      <figure class="huber rv"><i class="tape"></i><span class="bubble" lang="de">Sind Sie Mechaniker?</span><div class="hph"><svg viewBox="0 0 200 240" aria-hidden="true"><path d="M18,240 C22,190 60,176 100,176 C140,176 178,190 182,240 Z" fill="#141414"/><path d="M84,177 L100,206 L116,177 Z" fill="#F2EFE9"/><path d="M72,182 L80,240 M128,182 L120,240" stroke="#E3232C" stroke-width="7"/><path d="M86,148 L86,180 L114,180 L114,148" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="56" cy="114" rx="8" ry="14" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="144" cy="114" rx="8" ry="14" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="100" cy="110" rx="44" ry="54" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><path d="M100,56 A44,54 0 0 1 100,164 C126,140 130,80 100,56Z" fill="url(#ht)" opacity=".45"/><path d="M60,64 C60,24 140,24 140,64 Z" fill="#141414"/><path d="M61,55 L139,55 L140,64 L60,64 Z" fill="#E3232C"/><ellipse cx="100" cy="65" rx="60" ry="11" fill="#141414"/><path d="M128,52 C142,30 156,18 164,8 C162,24 150,40 132,56 Z" fill="#E3232C" stroke="#141414" stroke-width="2"/><path d="M68,93 L92,87 M108,87 L132,93" stroke="#141414" stroke-width="7" stroke-linecap="round"/><circle cx="82" cy="105" r="12" fill="none" stroke="#141414" stroke-width="3"/><circle cx="118" cy="105" r="12" fill="none" stroke="#141414" stroke-width="3"/><path d="M94,105 L106,105" stroke="#141414" stroke-width="3"/><circle cx="87" cy="106" r="3.2" fill="#141414"/><circle cx="123" cy="106" r="3.2" fill="#141414"/><path d="M100,110 C95,123 93,129 103,131" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/><path d="M70,141 C80,127 96,129 100,135 C104,129 120,127 130,141 C138,151 146,143 149,136 C147,155 124,157 112,147 C106,143 102,143 100,147 C98,143 94,143 88,147 C76,157 53,155 51,136 C54,143 62,151 70,141 Z" fill="#141414"/></svg></div><div class="sig">Herr Huber, 70</div></figure>
+      <div class="lines"><p>Это мой сосед.</p><p>Усы, шляпа с пером, садовые перчатки.</p><p>Немецкий у него идеальный. Терпение — нет.</p></div>
+    </div>
     <div class="feed" id="feed">
       <article class="ig rv">
         <div class="ig-h"><img src="../media/logo.webp" alt="" width="26" height="26">stellas.deutsch<svg class="ic"><use href="#i-ellipsis"/></svg></div>
-        <div class="post p1" data-say="Ich warte das Paket."><span class="tag">лестница · 08:14</span><div class="pt" lang="de">Ich warte <span class="red">das</span> Paket.</div><div class="pc">← это сказал я</div></div>
+        <div class="post p1" data-say="Ich warte das Paket."><span class="tag">лестница · 08:14</span><div class="pt" lang="de">Ich warte <span class="red">das</span> Paket.</div><div class="pc">← это сказал я</div><svg class="paket" viewBox="0 0 160 140" aria-hidden="true"><path d="M80,10 L150,40 L80,70 L10,40 Z" fill="#D8B888" stroke="#141414" stroke-width="3" stroke-linejoin="round"/><path d="M10,40 L80,70 L80,132 L10,102 Z" fill="#C8A36C" stroke="#141414" stroke-width="3" stroke-linejoin="round"/><path d="M80,70 L150,40 L150,102 L80,132 Z" fill="#B48C55" stroke="#141414" stroke-width="3" stroke-linejoin="round"/><path d="M44,25 L114,55 L114,63 L44,33 Z" fill="#EFE3C8" opacity=".85"/><g transform="rotate(-22 112 88)"><rect x="90" y="76" width="46" height="22" fill="none" stroke="#E3232C" stroke-width="3"/><text x="113" y="93" text-anchor="middle" font-family="Oswald,Impact,sans-serif" font-weight="700" font-size="15" fill="#E3232C">PAKET</text></g><path d="M22,64 l18,8 M22,74 l30,13" stroke="#141414" stroke-width="2.4" stroke-linecap="round"/></svg></div>
         <div class="ig-a"><svg class="ic"><use href="#i-heart"/></svg><svg class="ic"><use href="#i-message-circle"/></svg><svg class="ic"><use href="#i-send"/></svg><svg class="ic"><use href="#i-bookmark"/></svg></div>
         <div class="ig-c">
           <p><b>stellas.deutsch</b> Я живу в Австрии. У меня есть сосед. Герр Хубер. Семьдесят лет, усы, садовые перчатки круглый год.</p>
@@ -822,7 +956,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       </article>
       <article class="ig rv">
         <div class="ig-h"><img src="../media/logo.webp" alt="" width="26" height="26">stellas.deutsch<svg class="ic"><use href="#i-ellipsis"/></svg></div>
-        <div class="post p2" data-say="Sie warten das Paket? Sind Sie Mechaniker?"><span class="tag">через три секунды</span><div class="pt" lang="de">Sind Sie Mechaniker?</div><div class="pc">— Herr Huber</div><svg class="stk"><use href="#stk"/></svg></div>
+        <div class="post p2" data-say="Sie warten das Paket? Sind Sie Mechaniker?"><span class="tag">через три секунды</span><div class="pt" lang="de">Sind Sie Mechaniker?</div><div class="pc">— Herr Huber</div><svg class="ic bgi"><use href="#i-wrench"/></svg><svg class="stk"><use href="#stk"/></svg></div>
         <div class="ig-a"><svg class="ic"><use href="#i-heart"/></svg><svg class="ic"><use href="#i-message-circle"/></svg><svg class="ic"><use href="#i-send"/></svg><svg class="ic"><use href="#i-bookmark"/></svg></div>
         <div class="ig-c">
           <p><b>stellas.deutsch</b> Герр Хубер смотрит на меня. Долго.</p>
@@ -897,12 +1031,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
     <h3 class="h3">Шесть <em>главных</em></h3>
     <p class="sub">Без них не соберёшь ни одной фразы. Жми на значок — покажу, как они меняются.</p>
     <div class="pins" id="pins">
-      <button class="pin" type="button" data-v="sein"><span><b>sein</b><i>быть</i></span></button>
-      <button class="pin" type="button" data-v="haben"><span><b>haben</b><i>иметь</i></span></button>
-      <button class="pin" type="button" data-v="werden"><span><b>werden</b><i>становиться</i></span></button>
-      <button class="pin" type="button" data-v="können"><span><b>können</b><i>мочь</i></span></button>
-      <button class="pin" type="button" data-v="müssen"><span><b>müssen</b><i>быть должным</i></span></button>
-      <button class="pin" type="button" data-v="wollen"><span><b>wollen</b><i>хотеть</i></span></button>
+      <button class="pin" type="button" data-v="sein"><span><svg class="ic"><use href="#i-user"/></svg><b>sein</b><i>быть</i></span></button>
+      <button class="pin" type="button" data-v="haben"><span><svg class="ic"><use href="#i-hand"/></svg><b>haben</b><i>иметь</i></span></button>
+      <button class="pin" type="button" data-v="werden"><span><svg class="ic"><use href="#i-sparkles"/></svg><b>werden</b><i>становиться</i></span></button>
+      <button class="pin" type="button" data-v="können"><span><svg class="ic"><use href="#i-dumbbell"/></svg><b>können</b><i>мочь</i></span></button>
+      <button class="pin" type="button" data-v="müssen"><span><svg class="ic"><use href="#i-alarm-clock"/></svg><b>müssen</b><i>быть должным</i></span></button>
+      <button class="pin" type="button" data-v="wollen"><span><svg class="ic"><use href="#i-heart"/></svg><b>wollen</b><i>хотеть</i></span></button>
     </div>
     <div class="conj" id="conj"><em>ich · du · er/sie/es — жми на значок</em></div>
 
@@ -941,7 +1075,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
           <i class="hitch" id="h2"></i>
           <div class="wg c" id="wgC">AKK</div>
         </div>
-        <div class="tr-sent" id="trS" lang="de"></div>
+        <div class="tr-row"><span class="tr-pic" id="trPic"><svg class="ic"><use href="#i-bus"/></svg></span><div class="tr-sent" id="trS" lang="de"></div></div>
         <div class="tr-ru" id="trR"></div>
         <div class="tr-ctl"><div class="dots" id="trD"></div><button class="say" type="button" id="trSay" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
       </div>
@@ -963,12 +1097,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <p>Немцу всё равно, что думает твой мозг.</p>
     </div>
     <div class="lanes" id="lanes">
-      <div class="ln"><span class="ru">думать о тебе</span><div class="row"><span class="bad" lang="de">über dich<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,15 C30,3 64,19 98,5"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>an</em> dich</span></div><button class="say" type="button" data-say="Ich denke an dich." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">denken an + Akk</span></div>
-      <div class="ln"><span class="ru">ждать автобус</span><div class="row"><span class="bad" lang="de">den Bus<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,8 C34,18 60,2 98,14"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>auf</em> den Bus</span></div><button class="say" type="button" data-say="Ich warte auf den Bus." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">warten auf + Akk</span></div>
-      <div class="ln"><span class="ru">бояться собаки</span><div class="row"><span class="bad" lang="de">den Hund<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,14 C30,4 64,18 98,6"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>vor</em> dem Hund</span></div><button class="say" type="button" data-say="Ich habe Angst vor dem Hund." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">Angst haben vor + Dat</span></div>
-      <div class="ln"><span class="ru">интересоваться музыкой</span><div class="row"><span class="bad" lang="de">mit Musik<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,9 C30,19 66,3 98,13"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>für</em> Musik</span></div><button class="say" type="button" data-say="Ich interessiere mich für Musik." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">sich interessieren für + Akk</span></div>
-      <div class="ln"><span class="ru">гордиться сыном</span><div class="row"><span class="bad" lang="de">mit dem Sohn<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,14 C34,2 62,18 98,7"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>auf</em> den Sohn</span></div><button class="say" type="button" data-say="Ich bin stolz auf meinen Sohn." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">stolz sein auf + Akk</span></div>
-      <div class="ln same"><span class="ru" style="color:var(--mute2)">зависеть от погоды</span><div class="row"><span class="ok" lang="de"><em>von</em> dem Wetter</span><span class="hand">совпало. редкий случай</span></div><button class="say" type="button" data-say="Das hängt vom Wetter ab." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">abhängen von + Dat</span></div>
+      <div class="ln"><span class="lb"><svg class="ic"><use href="#i-heart"/></svg></span><span class="ru">думать о тебе</span><div class="row"><span class="bad" lang="de">über dich<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,15 C30,3 64,19 98,5"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>an</em> dich</span></div><button class="say" type="button" data-say="Ich denke an dich." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">denken an + Akk</span></div>
+      <div class="ln"><span class="lb"><svg class="ic"><use href="#i-bus"/></svg></span><span class="ru">ждать автобус</span><div class="row"><span class="bad" lang="de">den Bus<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,8 C34,18 60,2 98,14"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>auf</em> den Bus</span></div><button class="say" type="button" data-say="Ich warte auf den Bus." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">warten auf + Akk</span></div>
+      <div class="ln"><span class="lb"><svg class="ic"><use href="#i-dog"/></svg></span><span class="ru">бояться собаки</span><div class="row"><span class="bad" lang="de">den Hund<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,14 C30,4 64,18 98,6"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>vor</em> dem Hund</span></div><button class="say" type="button" data-say="Ich habe Angst vor dem Hund." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">Angst haben vor + Dat</span></div>
+      <div class="ln"><span class="lb"><svg class="ic"><use href="#i-music"/></svg></span><span class="ru">интересоваться музыкой</span><div class="row"><span class="bad" lang="de">mit Musik<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,9 C30,19 66,3 98,13"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>für</em> Musik</span></div><button class="say" type="button" data-say="Ich interessiere mich für Musik." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">sich interessieren für + Akk</span></div>
+      <div class="ln"><span class="lb"><svg class="ic"><use href="#i-medal"/></svg></span><span class="ru">гордиться сыном</span><div class="row"><span class="bad" lang="de">mit dem Sohn<svg viewBox="0 0 100 20" preserveAspectRatio="none"><path pathLength="1" d="M2,14 C34,2 62,18 98,7"/></svg></span><svg class="ic"><use href="#i-move-right"/></svg><span class="ok" lang="de"><em>auf</em> den Sohn</span></div><button class="say" type="button" data-say="Ich bin stolz auf meinen Sohn." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">stolz sein auf + Akk</span></div>
+      <div class="ln same"><span class="lb"><svg class="ic"><use href="#i-cloud-rain"/></svg></span><span class="ru" style="color:var(--mute2)">зависеть от погоды</span><div class="row"><span class="ok" lang="de"><em>von</em> dem Wetter</span><span class="hand">совпало. редкий случай</span></div><button class="say" type="button" data-say="Das hängt vom Wetter ab." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="rule">abhängen von + Dat</span></div>
     </div>
     <div class="lines"><p>Иногда совпадает. Не расслабляйся.</p><p><b>Учи глагол вместе с предлогом. Как имя с фамилией.</b></p></div>
   </div>
@@ -982,6 +1116,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <span class="oval"><svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M42,60 C10,47 20,14 120,9 C222,4 297,17 293,39 C289,63 214,74 140,73 C64,72 11,63 14,44 C17,27 72,15 172,15"/><path pathLength="1" d="M70,69 C160,80 262,70 288,50"/></svg>Akkusativ или Dativ</span>
     </header>
     <div class="lines">
+      <div class="hdeco"><span><svg class="ic"><use href="#i-swords"/></svg></span><span><svg class="ic"><use href="#i-users"/></svg></span><span><svg class="ic"><use href="#i-crown"/></svg></span></div>
       <p>Падеж выбирает предлог. У предлогов банды.</p>
       <p>Одни всегда с Akkusativ. Другие всегда с Dativ.</p>
       <p>Третьи работают на обе стороны. Двойные агенты.</p>
@@ -1003,12 +1138,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
     <div class="lines"><p>А вот с глаголами-прицепами «где-куда» не работает.</p><p>Тут свои правила. Короткие. Шесть штук.</p></div>
     <div class="rules">
-      <div class="rl rv"><i class="tape"></i><h5>über <em>Akk</em></h5><p><b>Всегда.</b> Без исключений. Отдыхай.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Wir lachen über den Witz." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>lachen über den Witz</div></div>
-      <div class="rl rv"><i class="tape"></i><h5>auf <em>Akk</em></h5><p><b>Почти всегда.</b> Исключение одно: bestehen auf + Dat.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich warte auf den Bus." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>warten auf den Bus</div></div>
-      <div class="rl rv"><i class="tape"></i><h5>in <em>Akk</em></h5><p><b>Влюбиться.</b> Самый частый случай. Сердце летит к цели.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Sie hat sich in den Nachbarn verliebt." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>sich verlieben in den Nachbarn</div></div>
-      <div class="rl rv"><i class="tape"></i><h5>vor <em class="d">Dat</em></h5><p><b>Страх и защита.</b> Бояться, предупреждать, прятаться.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich habe Angst vor dem Hund." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>Angst vor dem Hund</div></div>
-      <div class="rl rv"><i class="tape"></i><h5>unter <em class="d">Dat</em></h5><p><b>Страдать от.</b> Ты под грузом. Груз в Дативе.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Sie leidet unter dem Stress." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>leiden unter dem Stress</div></div>
-      <div class="rl rv"><i class="tape"></i><h5>an <em>50</em><em class="d">50</em></h5><p><b>Единственный хитрый.</b> Смотри весы ниже.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich denke an dich. Ich arbeite an dem Projekt." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>an dich · an dem Projekt</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-laugh"/></svg><h5>über <em>Akk</em></h5><p><b>Всегда.</b> Без исключений. Отдыхай.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Wir lachen über den Witz." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>lachen über den Witz</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-hourglass"/></svg><h5>auf <em>Akk</em></h5><p><b>Почти всегда.</b> Исключение одно: bestehen auf + Dat.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich warte auf den Bus." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>warten auf den Bus</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-heart"/></svg><h5>in <em>Akk</em></h5><p><b>Влюбиться.</b> Самый частый случай. Сердце летит к цели.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Sie hat sich in den Nachbarn verliebt." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>sich verlieben in den Nachbarn</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-bug"/></svg><h5>vor <em class="d">Dat</em></h5><p><b>Страх и защита.</b> Бояться, предупреждать, прятаться.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich habe Angst vor dem Hund." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>Angst vor dem Hund</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-cloud-rain"/></svg><h5>unter <em class="d">Dat</em></h5><p><b>Страдать от.</b> Ты под грузом. Груз в Дативе.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Sie leidet unter dem Stress." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>leiden unter dem Stress</div></div>
+      <div class="rl rv"><i class="tape"></i><svg class="ic ri"><use href="#i-scale"/></svg><h5>an <em>50</em><em class="d">50</em></h5><p><b>Единственный хитрый.</b> Смотри весы ниже.</p><div class="ex" lang="de"><button class="say" type="button" data-say="Ich denke an dich. Ich arbeite an dem Projekt." aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>an dich · an dem Projekt</div></div>
     </div>
 
     <h3 class="h3">Весы для <em>an</em></h3>
@@ -1030,6 +1165,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <span class="oval"><svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M42,60 C10,47 20,14 120,9 C222,4 297,17 293,39 C289,63 214,74 140,73 C64,72 11,63 14,44 C17,27 72,15 172,15"/><path pathLength="1" d="M70,69 C160,80 262,70 288,50"/></svg>1 глагол — 2 смысла</span>
     </header>
     <div class="lines">
+      <div class="hdeco"><span><svg class="ic"><use href="#i-drama"/></svg></span><span><svg class="ic"><use href="#i-briefcase"/></svg></span><span><svg class="ic"><use href="#i-music"/></svg></span></div>
       <p>Один глагол. Два предлога. Два разных человека.</p>
       <p>Днём бухгалтер. Ночью диджей.</p>
     </div>
@@ -1085,7 +1221,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
         <p class="gap">Отвечаешь — <span class="de" lang="de">da</span> + предлог. По той же схеме.</p>
       </div>
       <div>
-        <div class="wb" id="wb">
+        <div class="wb" id="wb"><span class="wb-pic" id="wbPic"><svg class="ic"><use href="#i-bus"/></svg></span>
           <div class="wb-row" lang="de"><span class="bl" id="wbW">wo</span><span class="op">+</span><span class="bl r" id="wbR">r</span><span class="op" id="wbO2">+</span><span class="bl p" id="wbP">auf</span><span class="op">=</span><span class="res" id="wbRes">worauf</span></div>
           <div class="wb-q" id="wbQ" lang="de"></div>
           <div class="wb-rule" id="wbRule"></div>
@@ -1139,16 +1275,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <span class="oval"><svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M42,60 C10,47 20,14 120,9 C222,4 297,17 293,39 C289,63 214,74 140,73 C64,72 11,63 14,44 C17,27 72,15 172,15"/><path pathLength="1" d="M70,69 C160,80 262,70 288,50"/></svg>без героизма</span>
     </header>
     <div class="notes">
-      <div class="nt rv"><i class="tape"></i><div class="no">01</div><h5>Тройкой</h5><p>Не <span class="de" lang="de">warten</span>. А <span class="de" lang="de">warten auf + Akk</span>. Целиком. Как номер телефона. По одной цифре номер не запоминают.</p></div>
-      <div class="nt rv"><i class="tape"></i><div class="no">02</div><h5>Одна фраза про себя</h5><p><span class="de" lang="de">Ich warte auf den Sommer.</span> Чужие примеры забываются. Свои остаются. Проверено на соседе.</p></div>
-      <div class="nt rv"><i class="tape"></i><div class="no">03</div><h5>Десять в день</h5><p>Утром выписал десять. Вечером закрыл перевод и вспомнил. Восемнадцать дней. Никакого героизма.</p></div>
+      <div class="nt rv"><i class="tape"></i><svg class="ic nic"><use href="#i-link"/></svg><div class="no">01</div><h5>Тройкой</h5><p>Не <span class="de" lang="de">warten</span>. А <span class="de" lang="de">warten auf + Akk</span>. Целиком. Как номер телефона. По одной цифре номер не запоминают.</p></div>
+      <div class="nt rv"><i class="tape"></i><svg class="ic nic"><use href="#i-pen-line"/></svg><div class="no">02</div><h5>Одна фраза про себя</h5><p><span class="de" lang="de">Ich warte auf den Sommer.</span> Чужие примеры забываются. Свои остаются. Проверено на соседе.</p></div>
+      <div class="nt rv"><i class="tape"></i><svg class="ic nic"><use href="#i-calendar"/></svg><div class="no">03</div><h5>Десять в день</h5><p>Утром выписал десять. Вечером закрыл перевод и вспомнил. Восемнадцать дней. Никакого героизма.</p></div>
     </div>
+    <div class="hub-row">
+    <figure class="huber rv" style="rotate:3deg"><i class="tape"></i><span class="bubble" lang="de">Sehr gut.</span><div class="hph"><svg viewBox="0 0 200 240" aria-hidden="true"><path d="M18,240 C22,190 60,176 100,176 C140,176 178,190 182,240 Z" fill="#141414"/><path d="M84,177 L100,206 L116,177 Z" fill="#F2EFE9"/><path d="M72,182 L80,240 M128,182 L120,240" stroke="#E3232C" stroke-width="7"/><path d="M86,148 L86,180 L114,180 L114,148" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="56" cy="114" rx="8" ry="14" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="144" cy="114" rx="8" ry="14" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><ellipse cx="100" cy="110" rx="44" ry="54" fill="#F2EFE9" stroke="#141414" stroke-width="3"/><path d="M100,56 A44,54 0 0 1 100,164 C126,140 130,80 100,56Z" fill="url(#ht)" opacity=".45"/><path d="M60,64 C60,24 140,24 140,64 Z" fill="#141414"/><path d="M61,55 L139,55 L140,64 L60,64 Z" fill="#E3232C"/><ellipse cx="100" cy="65" rx="60" ry="11" fill="#141414"/><path d="M128,52 C142,30 156,18 164,8 C162,24 150,40 132,56 Z" fill="#E3232C" stroke="#141414" stroke-width="2"/><path d="M68,93 L92,87 M108,87 L132,93" stroke="#141414" stroke-width="7" stroke-linecap="round"/><circle cx="82" cy="105" r="12" fill="none" stroke="#141414" stroke-width="3"/><circle cx="118" cy="105" r="12" fill="none" stroke="#141414" stroke-width="3"/><path d="M94,105 L106,105" stroke="#141414" stroke-width="3"/><circle cx="87" cy="106" r="3.2" fill="#141414"/><circle cx="123" cy="106" r="3.2" fill="#141414"/><path d="M100,110 C95,123 93,129 103,131" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/><path d="M70,141 C80,127 96,129 100,135 C104,129 120,127 130,141 C138,151 146,143 149,136 C147,155 124,157 112,147 C106,143 102,143 100,147 C98,143 94,143 88,147 C76,157 53,155 51,136 C54,143 62,151 70,141 Z" fill="#141414"/></svg></div><div class="sig">через месяц</div></figure>
     <div class="lines callback">
       <p>Я так и делал. Тройками. Десять в день.</p>
       <p class="gap">Через месяц встречаю герра Хубера.</p>
       <p>Говорю, <span class="de" lang="de">Ich warte auf den Postboten.</span></p>
       <p>Он смотрит. Долго. Говорит, <span class="de" lang="de">sehr gut.</span></p>
       <p class="gap"><b>Первый раз за два года.</b></p>
+    </div>
     </div>
   </div>
 </section>
@@ -1161,15 +1300,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <span class="oval"><svg viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M42,60 C10,47 20,14 120,9 C222,4 297,17 293,39 C289,63 214,74 140,73 C64,72 11,63 14,44 C17,27 72,15 172,15"/><path pathLength="1" d="M70,69 C160,80 262,70 288,50"/></svg>сделай скрин</span>
     </header>
     <div class="cheat">
-      <div class="ch rv"><h4>Только Akk</h4><p class="big" lang="de">durch · für · gegen · ohne · um · bis</p></div>
-      <div class="ch rv"><h4>Только Dat</h4><p class="big" lang="de">aus · bei · mit · nach · seit · von · zu</p></div>
-      <div class="ch rv"><h4>Двойные с глаголами</h4><p><b>über, auf, in</b> → Akk</p><p><b>vor, unter</b> → Dat</p><p><b>bestehen auf</b> → Dat. Исключение</p><p><b>an</b> → смотри весы</p></div>
-      <div class="ch rv"><h4>an + Akk</h4><p lang="de">denken · sich erinnern · sich gewöhnen · glauben · schreiben · sich wenden</p></div>
-      <div class="ch rv"><h4>an + Dat</h4><p lang="de">arbeiten · teilnehmen · leiden · sterben · sich beteiligen · zweifeln</p></div>
-      <div class="ch rv"><h4>Двойники</h4><p><b lang="de">freuen auf</b> будущее · <b lang="de">über</b> прошлое</p><p><b lang="de">denken an</b> о ком · <b lang="de">über</b> мнение</p><p><b lang="de">leiden an</b> болезнь · <b lang="de">unter</b> ситуация</p><p><b lang="de">halten für</b> считать кем · <b lang="de">von</b> мнение</p></div>
-      <div class="ch rv"><h4>Вопрос и ответ</h4><p>Вещь: <b lang="de">wo(r) + предлог</b></p><p>Человек: <b lang="de">предлог + wen / wem</b></p><p>Ответ: <b lang="de">da(r) + предлог</b></p></div>
-      <div class="ch rv"><h4>Как учить</h4><p>Глагол + предлог + падеж. Одной фразой про себя. Десять в день.</p></div>
-      <div class="ch rv"><h4>Ловушка</h4><p>Русское «о ком» почти никогда не <b lang="de">über</b>. <b lang="de">denken an</b>, <b lang="de">erzählen von</b>, <b lang="de">sprechen über</b>. Учи с предлогом.</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-arrow-right"/></svg>Только Akk</h4><p class="big" lang="de">durch · für · gegen · ohne · um · bis</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-arrow-down"/></svg>Только Dat</h4><p class="big" lang="de">aus · bei · mit · nach · seit · von · zu</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-scale"/></svg>Двойные с глаголами</h4><p><b>über, auf, in</b> → Akk</p><p><b>vor, unter</b> → Dat</p><p><b>bestehen auf</b> → Dat. Исключение</p><p><b>an</b> → смотри весы</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-brain"/></svg>an + Akk</h4><p lang="de">denken · sich erinnern · sich gewöhnen · glauben · schreiben · sich wenden</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-hammer"/></svg>an + Dat</h4><p lang="de">arbeiten · teilnehmen · leiden · sterben · sich beteiligen · zweifeln</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-users"/></svg>Двойники</h4><p><b lang="de">freuen auf</b> будущее · <b lang="de">über</b> прошлое</p><p><b lang="de">denken an</b> о ком · <b lang="de">über</b> мнение</p><p><b lang="de">leiden an</b> болезнь · <b lang="de">unter</b> ситуация</p><p><b lang="de">halten für</b> считать кем · <b lang="de">von</b> мнение</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-circle-help"/></svg>Вопрос и ответ</h4><p>Вещь: <b lang="de">wo(r) + предлог</b></p><p>Человек: <b lang="de">предлог + wen / wem</b></p><p>Ответ: <b lang="de">da(r) + предлог</b></p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-lightbulb"/></svg>Как учить</h4><p>Глагол + предлог + падеж. Одной фразой про себя. Десять в день.</p></div>
+      <div class="ch rv"><h4><svg class="ic"><use href="#i-siren"/></svg>Ловушка</h4><p>Русское «о ком» почти никогда не <b lang="de">über</b>. <b lang="de">denken an</b>, <b lang="de">erzählen von</b>, <b lang="de">sprechen über</b>. Учи с предлогом.</p></div>
     </div>
     <div class="polaroid"><i class="tape"></i><div class="ph" lang="de">warte <em>auf</em> mich</div><div class="sig">Herr Huber, 70</div></div>
   </div>
@@ -1316,11 +1455,12 @@ function xInit(){
   if(G) G.from('#pins .pin', {y:-160, rotation:-200, duration:1, ease:'bounce.out', stagger:.09, scrollTrigger:{trigger:'#pins', start:'top 85%', once:true}});
 
   /* ---------- 180 verbs ---------- */
+  var CICO = {all:'layers', b:'star', m:'footprints', h:'house', e:'utensils', o:'message-circle', g:'brain', w:'briefcase', f:'gamepad-2'};
   var CATS = {all:'Все 180', b:'База', m:'Движение', h:'Дом и быт', e:'Еда и тело', o:'Общение', g:'Голова и чувства', w:'Работа и учёба', f:'Отдых'};
   var RAW = "anziehen|надевать|Zieh die Jacke an!|Надень куртку!|h|\nausziehen|снимать|Ich ziehe die Schuhe aus.|Я снимаю обувь.|h|\nantworten|отвечать|Antworte auf die Frage.|Ответь на вопрос.|o|auf\narbeiten|работать|Ich arbeite den ganzen Tag.|Я работаю весь день.|w|an\natmen|дышать|Atme tief!|Дыши глубже!|e|\nsich ärgern|злиться|Warum ärgerst du dich?|Почему ты злишься?|g|über\naussehen|выглядеть|Du siehst müde aus.|Ты выглядишь уставшим.|b|\nbacken|печь|Oma backt einen Kuchen.|Бабушка печёт пирог.|e|\nbaden|купаться|Wir baden im Meer.|Мы купаемся в море.|f|\nbasteln|мастерить|Die Kinder basteln Sterne.|Дети мастерят звёзды.|f|\nbauen|строить|Sie bauen ein Haus.|Они строят дом.|h|\nbedeuten|означать|Was bedeutet das?|Что это значит?|b|\nbekommen|получать|Ich bekomme einen Brief.|Я получаю письмо.|b|\nbesuchen|навещать|Ich besuche meine Oma.|Я навещаю бабушку.|o|\nbewundern|восхищаться|Ich bewundere die Berge.|Я восхищаюсь горами.|g|\nbilden|образовывать|Bilde einen Satz.|Составь предложение.|w|\nbesichtigen|осматривать|Wir besichtigen die Stadt.|Мы осматриваем город.|f|\nbeginnen|начинать(ся)|Der Film beginnt um acht.|Фильм начинается в восемь.|b|mit\nsich befinden|находиться|Das Hotel befindet sich im Zentrum.|Отель находится в центре.|b|\nbitten|просить|Ich bitte dich um Hilfe.|Я прошу тебя о помощи.|o|um\nbleiben|оставаться|Heute bleibe ich zu Hause.|Сегодня я остаюсь дома.|m|\nbringen|приносить|Bring mir bitte Wasser.|Принеси, пожалуйста, воды.|h|\nbrauchen|нуждаться|Ich brauche deine Hilfe.|Мне нужна твоя помощь.|b|\nsich beschäftigen|заниматься|Ich beschäftige mich mit Musik.|Я занимаюсь музыкой.|w|mit\ndauern|длиться|Das dauert zwei Stunden.|Это длится два часа.|b|\ndecken|накрывать|Ich decke den Tisch.|Я накрываю на стол.|h|\ndenken|думать|Ich denke an dich.|Я думаю о тебе.|g|an\ndürfen|иметь право|Hier darf man nicht rauchen.|Здесь нельзя курить.|b|\ndanken|благодарить|Ich danke dir für die Hilfe.|Спасибо тебе за помощь.|o|für\neinladen|приглашать|Ich lade dich zum Essen ein.|Приглашаю тебя на ужин.|o|zu\nsich entschuldigen|извиняться|Entschuldige bitte die Verspätung.|Извини за опоздание.|o|für\nentwickeln|развивать|Er entwickelt eine App.|Он разрабатывает приложение.|w|\nerzählen|рассказывать|Erzähl mir von deinem Urlaub.|Расскажи мне про отпуск.|o|von\nempfehlen|рекомендовать|Ich empfehle dir diesen Film.|Советую тебе этот фильм.|o|\nessen|есть|Wir essen um sieben.|Мы едим в семь.|e|\nerfahren|узнавать|Ich habe es gestern erfahren.|Я узнал это вчера.|g|\nerfinden|придумывать|Er erfindet eine Geschichte.|Он придумывает историю.|g|\nsich erinnern|вспоминать|Ich erinnere mich an seinen Namen.|Я помню его имя.|g|an\nerreichen|достигать|Ich erreiche mein Ziel.|Я достигаю цели.|w|\nsich erholen|отдыхать|Am Wochenende erhole ich mich.|На выходных я отдыхаю.|f|von\nfallen|падать|Die Blätter fallen.|Листья падают.|m|\nfahren|ехать|Wir fahren mit dem Auto.|Мы едем на машине.|m|\nfinden|находить, считать|Ich finde das Buch langweilig.|По-моему, книга скучная.|g|\nfliegen|летать|Morgen fliege ich nach Wien.|Завтра я лечу в Вену.|m|\nfehlen|отсутствовать|Wer fehlt heute?|Кого сегодня нет?|w|\nfeiern|праздновать|Wir feiern meinen Geburtstag.|Мы празднуем мой день рождения.|f|\nfressen|есть (о животных)|Die Katze frisst Fisch.|Кошка ест рыбу.|e|\nfernsehen|смотреть ТВ|Abends sehen wir fern.|Вечером мы смотрим телевизор.|f|\nfragen|спрашивать|Darf ich etwas fragen?|Можно спросить?|o|nach\nsich freuen|радоваться|Ich freue mich auf das Wochenende.|Жду не дождусь выходных.|g|auf\nführen|вести, руководить|Sie führt eine Firma.|Она руководит фирмой.|w|\nfüttern|кормить|Ich füttere den Hund.|Я кормлю собаку.|h|\nsich fühlen|чувствовать себя|Ich fühle mich müde.|Я чувствую себя уставшим.|e|\nfrieren|мёрзнуть|Im Winter friere ich.|Зимой я мёрзну.|e|\ngeben|давать|Gib mir deine Hand.|Дай мне руку.|b|\ngehen|идти|Wir gehen nach Hause.|Мы идём домой.|m|\nes gibt|есть, имеется|Hier gibt es ein Café.|Здесь есть кафе.|b|\ngefallen|нравиться|Das T-Shirt gefällt mir.|Мне нравится футболка.|g|\ngießen|поливать|Ich gieße die Blumen.|Я поливаю цветы.|h|\ngehören|принадлежать|Die Tasche gehört mir.|Это моя сумка.|b|zu\ngrüßen|приветствовать|Grüß deine Mutter von mir!|Передай маме привет!|o|\ngebären|рожать|Sie hat ein Kind geboren.|Она родила ребёнка.|e|\nglauben|верить, полагать|Ich glaube, das stimmt.|Думаю, это правда.|g|an\ngratulieren|поздравлять|Ich gratuliere dir zum Geburtstag.|Поздравляю тебя с днём рождения.|o|zu\ngründen|основать|Er hat eine Firma gegründet.|Он основал фирму.|w|\nhaben|иметь|Ich habe eine Katze.|У меня есть кошка.|b|\nhalten|держать, останавливаться|Der Bus hält hier.|Автобус здесь останавливается.|m|für\nheilen|заживать|Die Wunde heilt langsam.|Рана заживает медленно.|e|\nheißen|зваться|Ich heiße Mark.|Меня зовут Марк.|b|\nhelfen|помогать|Kann ich Ihnen helfen?|Могу я вам помочь?|o|bei\nhören|слушать|Ich höre Musik.|Я слушаю музыку.|f|\nhängen|висеть|Das Bild hängt an der Wand.|Картина висит на стене.|h|\nsich irren|ошибаться|Ich kann mich irren.|Я могу ошибаться.|g|\nkaufen|покупать|Ich kaufe Brot.|Я покупаю хлеб.|h|\nsich kleiden|одеваться|Sie kleidet sich elegant.|Она одевается элегантно.|h|\nküssen|целовать|Er küsst sie.|Он её целует.|o|\nsich kämmen|причёсываться|Ich kämme mich.|Я причёсываюсь.|e|\nkennen|знать (быть знакомым)|Ich kenne den Weg nicht.|Я не знаю дорогу.|g|\nkennenlernen|знакомиться|Ich lerne neue Leute kennen.|Я знакомлюсь с новыми людьми.|o|\nklettern|карабкаться|Die Kinder klettern auf den Baum.|Дети лезут на дерево.|m|\nkommen|приходить|Ich komme nach Hause.|Я прихожу домой.|m|\nkönnen|мочь, уметь|Ich kann schwimmen.|Я умею плавать.|b|\nkosten|стоить|Was kostet das?|Сколько это стоит?|h|\nlachen|смеяться|Wir lachen über den Witz.|Мы смеёмся над шуткой.|g|über\nlaufen|бегать|Er läuft schnell.|Он быстро бегает.|m|\nleben|жить|Ich lebe in Österreich.|Я живу в Австрии.|b|\nlegen|класть|Leg das Buch auf den Tisch.|Положи книгу на стол.|h|\nlernen|учить|Ich lerne Deutsch.|Я учу немецкий.|w|\nlesen|читать|Ich lese gern.|Я люблю читать.|f|\nlieben|любить|Ich liebe dich.|Я тебя люблю.|g|\nliegen|лежать|Das Handy liegt auf dem Tisch.|Телефон лежит на столе.|h|\nlassen|оставлять|Ich habe das Heft zu Hause gelassen.|Я оставил тетрадь дома.|b|\nlüften|проветривать|Ich lüfte das Zimmer.|Я проветриваю комнату.|h|\nmachen|делать|Was machst du?|Что ты делаешь?|b|\nmeinen|иметь в виду|Was meinst du?|Что ты имеешь в виду?|g|\nmalen|рисовать|Sie malt ein Bild.|Она рисует картину.|f|\nmögen|любить, нравиться|Ich mag Kaffee.|Я люблю кофе.|g|\nmüssen|быть должным|Ich muss zum Arzt.|Мне надо к врачу.|b|\nnehmen|брать|Ich nehme den Bus.|Я еду на автобусе.|m|\nnennen|называть|Wie nennt man das?|Как это называется?|o|\nnutzen|использовать|Nutze jede freie Minute.|Используй каждую свободную минуту.|w|\nnähen|шить|Sie näht ein Kleid.|Она шьёт платье.|h|\npflanzen|сажать|Wir pflanzen einen Baum.|Мы сажаем дерево.|h|\npflücken|рвать, собирать|Wir pflücken Äpfel.|Мы собираем яблоки.|f|\nputzen|чистить, мыть|Ich putze die Fenster.|Я мою окна.|h|\npflegen|ухаживать|Sie pflegt ihre Mutter.|Она ухаживает за мамой.|h|\nrauchen|курить|Ich rauche nicht.|Я не курю.|e|\nrechnen|считать|Ich rechne im Kopf.|Я считаю в уме.|w|mit\nreisen|путешествовать|Wir reisen um die Welt.|Мы путешествуем по миру.|f|\nrodeln|кататься на санках|Im Winter rodeln die Kinder.|Зимой дети катаются на санках.|f|\nrufen|звать|Ruf den Kellner!|Позови официанта!|o|\nraten|советовать|Was rätst du mir?|Что посоветуешь?|o|zu\nretten|спасать|Er hat mein Leben gerettet.|Он спас мне жизнь.|b|\nreden|разговаривать|Wir reden über alles.|Мы говорим обо всём.|o|über\nsagen|сказать|Sag kein Wort!|Ни слова!|o|\nscheinen|светить|Die Sonne scheint.|Светит солнце.|b|\nschenken|дарить|Ich schenke dir Blumen.|Я дарю тебе цветы.|o|\nschicken|посылать|Ich schicke dir eine Nachricht.|Я пришлю тебе сообщение.|o|\nschmücken|украшать|Wir schmücken den Baum.|Мы наряжаем ёлку.|h|\nschreiben|писать|Ich schreibe eine E-Mail.|Я пишу письмо.|w|an\nschwimmen|плавать|Ich schwimme gern.|Я люблю плавать.|f|\nsehen|видеть|Ich sehe dich.|Я тебя вижу.|b|\nsein|быть|Ich bin müde.|Я устал.|b|\nsingen|петь|Sie singt ein Lied.|Она поёт песню.|f|\nsitzen|сидеть|Ich sitze auf dem Sofa.|Я сижу на диване.|h|\nsollen|быть должным (по чужой воле)|Ich soll mehr schlafen.|Мне велели больше спать.|b|\nsorgen|заботиться|Ich sorge für meine Katze.|Я забочусь о кошке.|h|für\nsparen|экономить|Ich spare Geld.|Я коплю деньги.|h|\nspielen|играть|Die Kinder spielen draußen.|Дети играют на улице.|f|mit\nspringen|прыгать|Der Hund springt hoch.|Собака прыгает высоко.|m|\nstehen|стоять|Ich stehe in der Schlange.|Я стою в очереди.|m|\nspazieren|гулять|Wir gehen im Park spazieren.|Мы гуляем в парке.|f|\nschießen|стрелять, забивать|Er schießt ein Tor.|Он забивает гол.|f|\nschlafen|спать|Am Sonntag schlafe ich lange.|В воскресенье я сплю долго.|e|\nschaffen|справиться|Ich habe die Prüfung geschafft.|Я сдал экзамен.|w|\nsuchen|искать|Ich suche meine Socken.|Я ищу свои носки.|h|nach\nsammeln|собирать|Er sammelt Briefmarken.|Он собирает марки.|f|\nstudieren|учиться в вузе|Ich studiere in Wien.|Я учусь в Вене.|w|\nsprechen|говорить|Sprichst du Deutsch?|Ты говоришь по-немецки?|o|mit\nschützen|защищать|Die Jacke schützt vor Kälte.|Куртка защищает от холода.|b|vor\nstricken|вязать|Oma strickt einen Schal.|Бабушка вяжет шарф.|h|\nsterben|умирать|Ohne Wasser sterben die Blumen.|Без воды цветы погибают.|e|an\nschätzen|ценить|Ich schätze deine Hilfe.|Я ценю твою помощь.|g|\nsich streiten|ссориться|Wir streiten uns selten.|Мы редко ссоримся.|o|um\ntanzen|танцевать|Wir tanzen die ganze Nacht.|Мы танцуем всю ночь.|f|\ntragen|носить|Sie trägt eine Brille.|Она носит очки.|h|\ntrinken|пить|Ich trinke Kaffee.|Я пью кофе.|e|\nträumen|мечтать|Ich träume von einem Haus.|Я мечтаю о доме.|g|von\nSport treiben|заниматься спортом|Ich treibe jeden Tag Sport.|Я занимаюсь спортом каждый день.|e|\nsich treffen|встречаться|Wir treffen uns vor dem Kino.|Встречаемся у кинотеатра.|o|mit\ntadeln|ругать|Der Chef tadelt ihn.|Начальник его отчитывает.|w|\nturnen|заниматься гимнастикой|Die Kinder turnen.|Дети занимаются гимнастикой.|f|\nteilnehmen|участвовать|Ich nehme am Kurs teil.|Я участвую в курсе.|w|an\ntrainieren|тренироваться|Wir trainieren zusammen.|Мы тренируемся вместе.|e|\nübersetzen|переводить|Kannst du das übersetzen?|Можешь это перевести?|w|\nverkaufen|продавать|Ich verkaufe mein Fahrrad.|Я продаю велосипед.|h|\nsich vorbereiten|готовиться|Ich bereite mich auf die Prüfung vor.|Я готовлюсь к экзамену.|w|auf\nvergessen|забывать|Ich habe deinen Namen vergessen.|Я забыл твоё имя.|g|\nverbringen|проводить (время)|Wir verbringen den Sommer am See.|Мы проводим лето на озере.|f|\nverstehen|понимать|Ich verstehe dich nicht.|Я тебя не понимаю.|g|\nsich vorstellen|представлять себе|Ich kann mir das nicht vorstellen.|Не могу себе это представить.|g|\nverdienen|зарабатывать|Er verdient gut.|Он хорошо зарабатывает.|w|\nvertrauen|доверять|Ich vertraue dir.|Я тебе доверяю.|g|\nverschmutzen|загрязнять|Autos verschmutzen die Luft.|Машины загрязняют воздух.|b|\nwaschen|мыть, стирать|Ich wasche die Wäsche.|Я стираю бельё.|h|\nweinen|плакать|Das Kind weint.|Ребёнок плачет.|g|\nwerden|становиться|Ich will Ärztin werden.|Я хочу стать врачом.|b|\nwiederholen|повторять|Können Sie das wiederholen?|Можете повторить?|o|\nwissen|знать (факт)|Ich weiß es nicht.|Я не знаю.|g|über\nwohnen|жить (где)|Ich wohne in Graz.|Я живу в Граце.|h|\nwollen|хотеть|Ich will ans Meer.|Хочу на море.|b|\nwünschen|желать|Ich wünsche dir alles Gute.|Желаю тебе всего хорошего.|o|\nwandern|ходить в поход|Wir wandern in den Bergen.|Мы ходим в походы в горы.|f|\nwählen|выбирать|Wähl eine Farbe.|Выбери цвет.|b|\nwachsen|расти|Das Kind wächst schnell.|Ребёнок быстро растёт.|e|\nwarten|ждать|Ich warte auf dich.|Я жду тебя.|b|auf\nzählen|считать|Ich zähle das Geld.|Я считаю деньги.|h|\nzeigen|показывать|Zeig mir das Foto.|Покажи мне фото.|o|\nzahlen|платить|Ich zahle mit Karte.|Я плачу картой.|h|\nzerstören|разрушать|Der Sturm zerstört das Dach.|Буря разрушает крышу.|b|";
   var VERBS = RAW.split('\n').map(function(l){ var a = l.split('|'); return {de:a[0], ru:a[1], ex:a[2], exr:a[3], c:a[4], p:a[5]}; });
   var wall = $('#wall'), wcats = $('#wcats'), wsearch = $('#wsearch'), cat = 'all', wallAll = false, wmore = $('#wmore');
-  wcats.innerHTML = Object.keys(CATS).map(function(k){ return '<button class="chip' + (k==='all' ? ' on' : '') + '" type="button" data-c="' + k + '">' + CATS[k] + '</button>'; }).join('');
+  wcats.innerHTML = Object.keys(CATS).map(function(k){ return '<button class="chip' + (k==='all' ? ' on' : '') + '" type="button" data-c="' + k + '">' + ic(CICO[k]) + CATS[k] + '</button>'; }).join('');
   function drawWall(){
     var q = (wsearch.value || '').trim().toLowerCase();
     var list = VERBS.filter(function(v){ return (cat === 'all' || v.c === cat) && (!q || v.de.toLowerCase().indexOf(q) > -1 || v.ru.toLowerCase().indexOf(q) > -1); });
@@ -1328,7 +1468,7 @@ function xInit(){
     if(!wallAll && !q && cat === 'all') list = list.slice(0, 40);
     wmore.style.display = list.length < full ? '' : 'none';
     wmore.innerHTML = 'Показать все ' + full + ' ' + ic('arrow-down');
-    wall.innerHTML = list.length ? list.map(function(v){ var i = VERBS.indexOf(v); return '<button class="vb' + (v.p ? ' p' : '') + '" type="button" data-i="' + i + '" lang="de">' + esc(v.de) + '<small lang="ru">' + esc(v.ru) + '</small></button>'; }).join('') : '<p class="empty">Такого нет. Попробуй по-другому.</p>';
+    wall.innerHTML = list.length ? list.map(function(v){ var i = VERBS.indexOf(v); return '<button class="vb' + (v.p ? ' p' : '') + '" type="button" data-i="' + i + '" lang="de">' + ic(CICO[v.c]) + '<span>' + esc(v.de) + '<small lang="ru">' + esc(v.ru) + '</small></span></button>'; }).join('') : '<p class="empty">Такого нет. Попробуй по-другому.</p>';
     if(G && list.length < 120) G.from($$('.vb', wall), {y:16, scale:.85, duration:.35, ease:'back.out(2)', stagger:.008});
   }
   drawWall();
@@ -1351,17 +1491,17 @@ function xInit(){
 
   /* ---------- 04 train ---------- */
   var TR = [
-    {v:'warten', p:'auf', c:'AKK', s:['Ich','warte','#auf',{f:'der',t:'den'},'Bus.'], ru:'Я жду автобус.', say:'Ich warte auf den Bus.'},
-    {v:'denken', p:'an', c:'AKK', s:['Ich','denke','#an',{f:'du',t:'dich.'}], ru:'Я думаю о тебе.', say:'Ich denke an dich.'},
-    {v:'Angst haben', p:'vor', c:'DAT', s:['Ich','habe','Angst','#vor',{f:'der',t:'dem'},'Hund.'], ru:'Я боюсь собаки.', say:'Ich habe Angst vor dem Hund.'},
-    {v:'sich interessieren', p:'für', c:'AKK', s:['Sie','interessiert','sich','#für',{f:'der',t:'den'},'Job.'], ru:'Её интересует эта работа.', say:'Sie interessiert sich für den Job.'},
-    {v:'helfen', p:'bei', c:'DAT', s:['Er','hilft','mir','#bei',{f:'die',t:'der'},'Arbeit.'], ru:'Он помогает мне с работой.', say:'Er hilft mir bei der Arbeit.'}
+    {pic:'bus', v:'warten', p:'auf', c:'AKK', s:['Ich','warte','#auf',{f:'der',t:'den'},'Bus.'], ru:'Я жду автобус.', say:'Ich warte auf den Bus.'},
+    {pic:'heart', v:'denken', p:'an', c:'AKK', s:['Ich','denke','#an',{f:'du',t:'dich.'}], ru:'Я думаю о тебе.', say:'Ich denke an dich.'},
+    {pic:'dog', v:'Angst haben', p:'vor', c:'DAT', s:['Ich','habe','Angst','#vor',{f:'der',t:'dem'},'Hund.'], ru:'Я боюсь собаки.', say:'Ich habe Angst vor dem Hund.'},
+    {pic:'briefcase', v:'sich interessieren', p:'für', c:'AKK', s:['Sie','interessiert','sich','#für',{f:'der',t:'den'},'Job.'], ru:'Её интересует эта работа.', say:'Sie interessiert sich für den Job.'},
+    {pic:'hammer', v:'helfen', p:'bei', c:'DAT', s:['Er','hilft','mir','#bei',{f:'die',t:'der'},'Arbeit.'], ru:'Он помогает мне с работой.', say:'Er hilft mir bei der Arbeit.'}
   ];
   var trI = 0, trTl = null, trOn = false;
   var wgV = $('#wgV'), wgVt = $('#wgVt'), wgP = $('#wgP'), wgC = $('#wgC'), h1 = $('#h1'), h2 = $('#h2'), trS = $('#trS'), trR = $('#trR'), trD = $('#trD');
   trD.innerHTML = TR.map(function(_, i){ return '<button type="button" data-i="' + i + '">' + (i+1) + '</button>'; }).join('');
   function trFill(i, final){
-    var t = TR[i]; wgVt.textContent = t.v; wgP.textContent = t.p; wgC.textContent = t.c;
+    var t = TR[i]; $('#trPic').innerHTML = ic(t.pic); wgVt.textContent = t.v; wgP.textContent = t.p; wgC.textContent = t.c;
     trS.innerHTML = t.s.map(function(w){
       if(typeof w === 'object') return '<span class="w flip' + (final ? ' to' : '') + '"><span class="fa">' + w.f + '</span><span class="fb">' + w.t + '</span></span>';
       if(w.charAt(0) === '#') return '<span class="w pr">' + w.slice(1) + '</span>';
@@ -1373,18 +1513,20 @@ function xInit(){
   function trBuild(i){
     trFill(i, false);
     var ws = $$('.w', trS), fl = $('.flip', trS), tl = G.timeline({onComplete:function(){ if(trOn){ trI = (trI + 1) % TR.length; trTl = trBuild(trI); } }});
-    G.set([wgV, wgP, wgC], {clearProps:'all'}); G.set([h1, h2], {scaleX:0}); G.set(ws, {y:30, rotation:6, scale:.6, opacity:0}); G.set(trR, {opacity:0});
+    G.set([wgV, wgP, wgC], {clearProps:'all'}); G.set([h1, h2], {scaleX:0}); G.set(ws, {y:30, rotation:6, scale:.6, opacity:0}); G.set(trR, {opacity:0}); G.set('#trPic', {scale:0.3, rotation:-90});
     tl.fromTo(wgV, {x:-260, rotation:-12}, {x:0, rotation:0, duration:.7, ease:'back.out(1.6)'})
       .to(h1, {scaleX:1, duration:.25, ease:'power2.out'})
       .fromTo(wgP, {scale:2.2, rotation:-35, y:-60}, {scale:1, rotation:-6, y:0, duration:.75, ease:'elastic.out(1,.45)'})
       .to(h2, {scaleX:1, duration:.25, ease:'power2.out'})
       .fromTo(wgC, {y:-140, rotation:40, scale:1.4}, {y:0, rotation:-14, scale:1, duration:.7, ease:'bounce.out'})
       .fromTo('#train .rail', {x:0}, {x:6, duration:.06, repeat:3, yoyo:true, ease:'none'})
-      .to(ws, {y:0, rotation:0, scale:1, opacity:1, duration:.45, ease:'back.out(2.4)', stagger:.12}, '+=.15')
+      .to('#trPic', {scale:1, rotation:0, duration:.7, ease:'elastic.out(1,.45)'}, '+=.1')
+      .to(ws, {y:0, rotation:0, scale:1, opacity:1, duration:.45, ease:'back.out(2.4)', stagger:.12}, '-=.35')
       .call(function(){ if(fl){ fl.classList.add('to'); G.fromTo(fl, {scale:1.5, rotation:-8}, {scale:1, rotation:0, duration:.7, ease:'elastic.out(1,.4)'}); } }, null, '+=.3')
       .to(trR, {opacity:1, duration:.4}, '<')
       .to({}, {duration:2.4})
-      .to([wgV, h1, wgP, h2, wgC], {x:420, rotation:8, duration:.6, ease:'power3.in', stagger:.04});
+      .to([wgV, h1, wgP, h2, wgC], {x:420, rotation:8, duration:.6, ease:'power3.in', stagger:.04})
+      .to('#trPic', {scale:.3, rotation:90, duration:.4, ease:'power2.in'}, '<');
     return tl;
   }
   trD.addEventListener('click', function(e){
@@ -1436,11 +1578,12 @@ function xInit(){
   /* ---------- 06 scale ---------- */
   var SL = ['denken an','sich erinnern an','sich gewöhnen an','glauben an','schreiben an','sich wenden an'];
   var SR = ['arbeiten an','teilnehmen an','leiden an','sterben an','sich beteiligen an','zweifeln an'];
+  var ICL = ['brain','camera','house','sparkles','mail','megaphone'], ICR = ['hammer','users','pill','snowflake','handshake','circle-help'];
   var SAYL = ['Ich denke an dich.','Ich erinnere mich an den Sommer.','Ich gewöhne mich an das Wetter.','Ich glaube an dich.','Ich schreibe an den Chef.','Wenden Sie sich an den Chef.'];
   var SAYR = ['Ich arbeite an dem Projekt.','Ich nehme an dem Kurs teil.','Er leidet an Migräne.','Die Pflanze stirbt an der Kälte.','Alle beteiligen sich an dem Spiel.','Ich zweifle an seiner Idee.'];
   var dishL = $('#dishL'), dishR = $('#dishR');
-  dishL.innerHTML = SL.map(function(t, i){ return '<button class="sv" type="button" lang="de" data-say="' + SAYL[i] + '">' + t + '</button>'; }).join('');
-  dishR.innerHTML = SR.map(function(t, i){ return '<button class="sv" type="button" lang="de" data-say="' + SAYR[i] + '">' + t + '</button>'; }).join('');
+  dishL.innerHTML = SL.map(function(t, i){ return '<button class="sv" type="button" lang="de" data-say="' + SAYL[i] + '">' + ic(ICL[i]) + t + '</button>'; }).join('');
+  dishR.innerHTML = SR.map(function(t, i){ return '<button class="sv" type="button" lang="de" data-say="' + SAYR[i] + '">' + ic(ICR[i]) + t + '</button>'; }).join('');
   if(G){
     var beam = $('#beam'), panL = $('#panL'), panR = $('#panR'), ang = {r:0};
     function setPans(){ var half = beam.offsetWidth / 2, dy = Math.sin(ang.r * Math.PI / 180) * half; G.set(beam, {rotation:ang.r}); G.set(panL, {y:-dy}); G.set(panR, {y:dy}); }
@@ -1460,14 +1603,14 @@ function xInit(){
 
   /* ---------- 07 timeline freuen ---------- */
   var TLS = [
-    {p:'über', x:.08, y:0, t:'Ich freue mich über das Geschenk.', s:'подарок уже в руках. Радуюсь тому, что есть'},
-    {p:'auf', x:.92, y:0, t:'Ich freue mich auf den Urlaub.', s:'отпуск через месяц. Жду и радуюсь заранее'},
-    {p:'für', x:.5, y:-62, t:'Ich freue mich für dich.', s:'ты сдал экзамен. Я рад за тебя'}
+    {ico:'gift', p:'über', x:.08, y:0, t:'Ich freue mich über das Geschenk.', s:'подарок уже в руках. Радуюсь тому, что есть'},
+    {ico:'plane', p:'auf', x:.92, y:0, t:'Ich freue mich auf den Urlaub.', s:'отпуск через месяц. Жду и радуюсь заранее'},
+    {ico:'party-popper', p:'für', x:.5, y:-62, t:'Ich freue mich für dich.', s:'ты сдал экзамен. Я рад за тебя'}
   ];
   var tlI = 0, tlTimer = null, tlLine = $('#tlLine'), tlDot = $('#tlDot'), tlP = $('#tlP'), tlT = $('#tlT'), tlCur = {x:0, y:0};
   function tlShow(i, anim){
     var s = TLS[i], w = tlLine.offsetWidth, tx = s.x * w, ty = s.y;
-    tlP.textContent = s.p;
+    tlP.textContent = s.p; tlDot.innerHTML = ic(s.ico);
     tlT.innerHTML = s.t.split(' ').map(function(x){ return '<span style="display:inline-block">' + x + '</span>'; }).join(' ') + '<small lang="ru">' + s.s + '</small>';
     if(G && MP && anim){
       G.to(tlDot, {duration:.9, ease:'power2.inOut', motionPath:{path:[{x:tlCur.x, y:tlCur.y}, {x:(tlCur.x + tx)/2, y:Math.min(tlCur.y, ty) - 46}, {x:tx, y:ty}], curviness:1.4}});
@@ -1484,20 +1627,21 @@ function xInit(){
 
   /* ---------- 07 dup cards ---------- */
   var DUPS = [
-    ['denken', 'an', 'über', 'думать о ком-то', 'Ich denke an dich.', 'какое у тебя мнение', 'Was denkst du über ihn?'],
-    ['leiden', 'an', 'unter', 'болезнь', 'Er leidet an Migräne.', 'ситуация давит', 'Sie leidet unter dem Lärm.'],
-    ['sprechen', 'mit', 'über', 'с кем говоришь', 'Ich spreche mit dem Chef.', 'о чём говоришь', 'Wir sprechen über Geld.'],
-    ['bestehen', 'auf', 'aus', 'настаивать (+ Dat)', 'Er besteht auf seinem Recht.', 'состоять из', 'Das Team besteht aus fünf Leuten.'],
-    ['sich bedanken', 'bei', 'für', 'у кого', 'Ich bedanke mich bei dir.', 'за что', 'Ich bedanke mich für die Blumen.'],
-    ['halten', 'für', 'von', 'считать кем-то (+ Akk)', 'Ich halte ihn für ein Genie.', 'какого мнения (+ Dat)', 'Was hältst du von dem Plan?']
+    ['brain', 'denken', 'an', 'über', 'думать о ком-то', 'Ich denke an dich.', 'какое у тебя мнение', 'Was denkst du über ihn?'],
+    ['pill', 'leiden', 'an', 'unter', 'болезнь', 'Er leidet an Migräne.', 'ситуация давит', 'Sie leidet unter dem Lärm.'],
+    ['messages-square', 'sprechen', 'mit', 'über', 'с кем говоришь', 'Ich spreche mit dem Chef.', 'о чём говоришь', 'Wir sprechen über Geld.'],
+    ['gavel', 'bestehen', 'auf', 'aus', 'настаивать (+ Dat)', 'Er besteht auf seinem Recht.', 'состоять из', 'Das Team besteht aus fünf Leuten.'],
+    ['hand-heart', 'sich bedanken', 'bei', 'für', 'у кого', 'Ich bedanke mich bei dir.', 'за что', 'Ich bedanke mich für die Blumen.'],
+    ['crown', 'halten', 'für', 'von', 'считать кем-то (+ Akk)', 'Ich halte ihn für ein Genie.', 'какого мнения (+ Dat)', 'Was hältst du von dem Plan?']
   ];
-  $('#dups').innerHTML = DUPS.map(function(d, i){
-    return '<button class="dup rv" type="button" data-i="' + i + '"><div class="dup-in"><div class="fc"><b lang="de">' + d[0] + '</b><div class="pp" lang="de"><span>' + d[1] + '</span><span>' + d[2] + '</span></div><small>' + ic('rotate-cw') + ' перевернуть</small></div>' +
-      '<div class="bc"><p><b lang="de">' + d[1] + '</b>' + d[3] + '<span lang="de">' + d[4] + '</span></p><p><b lang="de">' + d[2] + '</b>' + d[5] + '<span lang="de">' + d[6] + '</span></p></div></div></button>';
+  $('#dups').innerHTML = DUPS.map(function(d0, i){
+    var d = d0.slice(1);
+    return '<button class="dup rv" type="button" data-i="' + i + '"><div class="dup-in"><div class="fc">' + ic(d0[0]).replace('class="ic"', 'class="ic di"') + '<b lang="de">' + d[0] + '</b><div class="pp" lang="de"><span>' + d[1] + '</span><span>' + d[2] + '</span></div><small>' + ic('rotate-cw') + ' перевернуть</small></div>' +
+      '<div class="bc"><p>' + ic('arrow-right') + '<b lang="de">' + d[1] + '</b>' + d[3] + '<span lang="de">' + d[4] + '</span></p><p>' + ic('arrow-right') + '<b lang="de">' + d[2] + '</b>' + d[5] + '<span lang="de">' + d[6] + '</span></p></div></div></button>';
   }).join('');
   if('IntersectionObserver' in window && rio) $$('#dups .rv').forEach(function(el){ rio.observe(el); });
   if(G) ScrollTrigger.batch('#dups .dup', {start:'top 90%', once:true, onEnter:function(b){ G.from(b, {y:60, rotation:function(i){ return i%2 ? 5 : -5; }, duration:.8, ease:'back.out(1.6)', stagger:.1}); }});
-  $('#dups').addEventListener('click', function(e){ var b = e.target.closest('.dup'); if(!b) return; b.classList.toggle('on'); if(b.classList.contains('on')){ var d = DUPS[+b.dataset.i]; say(d[4] + ' ' + d[6]); } });
+  $('#dups').addEventListener('click', function(e){ var b = e.target.closest('.dup'); if(!b) return; b.classList.toggle('on'); if(b.classList.contains('on')){ var d = DUPS[+b.dataset.i].slice(1); say(d[4] + ' ' + d[6]); } });
 
   /* ---------- 08 top-80 ---------- */
   var TOP = [
@@ -1518,10 +1662,11 @@ function xInit(){
     {p:'unter', c:'D', n:'Под грузом. Dat.', it:[['leiden unter','страдать от','Sie leidet unter dem Stress.','Она страдает от стресса.']]},
     {p:'aus', c:'D', n:'Только Dat. Из банды.', it:[['bestehen aus','состоять из','Das Team besteht aus fünf Leuten.','Команда состоит из пяти человек.']]}
   ];
+  var ICO = {'warten auf':'hourglass','achten auf':'eye','aufpassen auf':'baby','sich freuen auf':'party-popper','sich verlassen auf':'handshake','sich vorbereiten auf':'book-open','antworten auf':'message-circle','sich konzentrieren auf':'target','stolz sein auf':'medal','hoffen auf':'sun','bestehen auf':'gavel','denken an':'brain','sich erinnern an':'camera','sich gewöhnen an':'house','glauben an':'sparkles','schreiben an':'mail','sich wenden an':'megaphone','arbeiten an':'hammer','teilnehmen an':'users','leiden an':'pill','sich beteiligen an':'dices','zweifeln an':'circle-help','sterben an':'snowflake','sich ärgern über':'angry','sich freuen über':'gift','sprechen über':'messages-square','nachdenken über':'lightbulb','lachen über':'laugh','sich beschweren über':'siren','reden über':'coins','sich informieren über':'newspaper','diskutieren über':'swords','sich wundern über':'eye','danken für':'hand-heart','sich interessieren für':'music','sich entscheiden für':'shirt','halten für':'crown','sich entschuldigen für':'clock','sorgen für':'baby','sich bedanken für':'flower-2','bitten um':'hand','sich kümmern um':'hand-heart','sich bewerben um':'briefcase','es geht um':'banknote','sich sorgen um':'heart-crack','sich streiten um':'swords','beneiden um':'gem','sich verlieben in':'heart','anfangen mit':'rocket','aufhören mit':'cigarette-off','sprechen mit':'phone','sich beschäftigen mit':'camera','einverstanden sein mit':'thumbs-up','telefonieren mit':'smartphone','sich treffen mit':'coffee','rechnen mit':'calculator','abhängen von':'cloud-rain','erzählen von':'plane','träumen von':'moon','sich verabschieden von':'hand','überzeugt sein von':'lightbulb','sich erholen von':'bed','halten von':'scale','abraten von':'shopping-cart','Angst haben vor':'bug','warnen vor':'siren','sich fürchten vor':'ghost','schützen vor':'umbrella','fliehen vor':'footprints','einladen zu':'cake','gratulieren zu':'party-popper','gehören zu':'users','passen zu':'shirt','raten zu':'stethoscope','überreden zu':'map','helfen bei':'book-open','sich bedanken bei':'hand-heart','sich entschuldigen bei':'school','sich bewerben bei':'building-2','fragen nach':'map','suchen nach':'key-round','riechen nach':'coffee','sich sehnen nach':'waves','leiden unter':'cloud-rain','bestehen aus':'users'};
   var cv = $('#cv');
   cv.innerHTML = TOP.map(function(g){
     return '<div class="grp" data-c="' + g.c + '"><h4 lang="de">' + g.p + ' <em class="' + (g.c === 'D' ? 'd' : '') + '">+ ' + (g.c === 'A' ? 'Akk' : 'Dat') + '</em></h4><p class="gn">' + g.n + '</p>' +
-      g.it.map(function(t){ return '<button class="tv" type="button" data-say="' + esc(t[2]) + '"><span class="tvh"><b lang="de">' + esc(t[0]) + '</b><span>' + esc(t[1]) + '</span></span><span class="tvx" lang="de">' + esc(t[2]) + '<i lang="ru">' + esc(t[3]) + '</i></span></button>'; }).join('') + '</div>';
+      g.it.map(function(t){ return '<button class="tv" type="button" data-say="' + esc(t[2]) + '"><span class="tvh"><span class="ti">' + ic(ICO[t[0]] || 'link') + '</span><b lang="de">' + esc(t[0]) + '</b><span>' + esc(t[1]) + '</span></span><span class="tvx" lang="de">' + esc(t[2]) + '<i lang="ru">' + esc(t[3]) + '</i></span></button>'; }).join('') + '</div>';
   }).join('');
   cv.addEventListener('click', function(e){ var b = e.target.closest('.tv'); if(!b) return; b.classList.toggle('on'); });
   $('#tfil').addEventListener('click', function(e){
@@ -1534,17 +1679,18 @@ function xInit(){
 
   /* ---------- 09 wo / da builder ---------- */
   var WB = [
-    {p:'mit', r:0, q:'Womit fährst du? — Mit dem Bus.', a:'Ich fahre damit.', ru:'На чём едешь? — На автобусе.'},
-    {p:'auf', r:1, q:'Worauf wartest du? — Auf den Bus.', a:'Ich warte darauf.', ru:'Чего ждёшь? — Автобус.'},
-    {p:'über', r:1, q:'Worüber sprecht ihr? — Über das Wetter.', a:'Wir sprechen darüber.', ru:'О чём говорите? — О погоде.'},
-    {p:'für', r:0, q:'Wofür interessierst du dich? — Für Musik.', a:'Ich interessiere mich dafür.', ru:'Чем интересуешься? — Музыкой.'},
-    {p:'an', r:1, q:'Woran denkst du? — An den Urlaub.', a:'Ich denke daran.', ru:'О чём думаешь? — Об отпуске.'},
-    {p:'von', r:0, q:'Wovon träumst du? — Von einem Haus.', a:'Ich träume davon.', ru:'О чём мечтаешь? — О доме.'},
-    {p:'um', r:1, q:'Worum geht es? — Um Geld.', a:'Es geht darum.', ru:'О чём речь? — О деньгах.'}
+    {ico:'bus', p:'mit', r:0, q:'Womit fährst du? — Mit dem Bus.', a:'Ich fahre damit.', ru:'На чём едешь? — На автобусе.'},
+    {ico:'hourglass', p:'auf', r:1, q:'Worauf wartest du? — Auf den Bus.', a:'Ich warte darauf.', ru:'Чего ждёшь? — Автобус.'},
+    {ico:'cloud-rain', p:'über', r:1, q:'Worüber sprecht ihr? — Über das Wetter.', a:'Wir sprechen darüber.', ru:'О чём говорите? — О погоде.'},
+    {ico:'music', p:'für', r:0, q:'Wofür interessierst du dich? — Für Musik.', a:'Ich interessiere mich dafür.', ru:'Чем интересуешься? — Музыкой.'},
+    {ico:'tree-palm', p:'an', r:1, q:'Woran denkst du? — An den Urlaub.', a:'Ich denke daran.', ru:'О чём думаешь? — Об отпуске.'},
+    {ico:'house', p:'von', r:0, q:'Wovon träumst du? — Von einem Haus.', a:'Ich träume davon.', ru:'О чём мечтаешь? — О доме.'},
+    {ico:'coins', p:'um', r:1, q:'Worum geht es? — Um Geld.', a:'Es geht darum.', ru:'О чём речь? — О деньгах.'}
   ];
   var wbI = 0, wbTimer = null, wbW = $('#wbW'), wbR = $('#wbR'), wbO2 = $('#wbO2'), wbP = $('#wbP'), wbRes = $('#wbRes'), wbQ = $('#wbQ'), wbRule = $('#wbRule');
   function wbStep(i, anim){
     var t = WB[i], show = t.r ? '' : 'none';
+    $('#wbPic').innerHTML = ic(t.ico); if(G && anim) G.fromTo('#wbPic', {scale:.3, rotation:-120}, {scale:1, rotation:0, duration:.8, ease:'elastic.out(1,.45)'});
     wbW.textContent = 'wo'; wbR.style.display = show; wbO2.style.display = show; wbP.textContent = t.p;
     wbRes.textContent = 'wo' + (t.r ? 'r' : '') + t.p;
     wbQ.innerHTML = t.q + '<span lang="ru">' + t.ru + '</span>';
@@ -1580,7 +1726,7 @@ function xInit(){
     var punct = orig.replace(/^[^.,!?]+/, ''), word = orig.replace(/[.,!?]+$/, '');
     gCur = {it:it, idx:idx, word:word, contr:CONTR[word.toLowerCase()] ? word : ''};
     var verb = it.v.replace(new RegExp('\\s' + it.p + '$'), '');
-    $('#gVerb').textContent = verb; $('#gRu').textContent = it.ru;
+    $('#gVerb').innerHTML = '<span class="g-ico">' + ic(ICO[it.v] || 'link') + '</span>' + esc(verb); $('#gRu').textContent = it.ru;
     $('#gSent').innerHTML = toks.map(function(t, k){ return k === idx ? '<u id="gBlank">___</u>' + punct : esc(t); }).join(' ');
     var opts = shuffle([it.p].concat(shuffle(PREPS.filter(function(p){ return p !== it.p; })).slice(0, 3)));
     $('#gOpts').innerHTML = opts.map(function(o){ return '<button type="button" data-o="' + o + '">' + o + '</button>'; }).join('');
@@ -1605,19 +1751,19 @@ function xInit(){
 
   /* ---------- 11 quiz ---------- */
   var Q = [
-    {q:'Ich denke oft ___ meine Oma.', o:['an','über','von'], c:0, x:'denken an + Akk. Русское «о бабушке» тянет к über. Не ведись.'},
-    {q:'Wir warten ___ den Bus.', o:['für','auf','—'], c:1, x:'warten auf. Без предлога ты автобус обслуживаешь. Спроси у герра Хубера.'},
-    {q:'Sie hat Angst ___ Hund.', o:['vor dem','vor den','für den'], c:0, x:'vor с глаголами-прицепами всегда Dativ. der Hund → dem Hund.'},
-    {q:'Ich freue mich ___ das Wochenende. (оно в субботу)', o:['über','auf','für'], c:1, x:'Выходные ещё впереди. Будущее — auf. Прошлое — über. Человек — für.'},
-    {q:'Er nimmt ___ Kurs teil.', o:['am','an den','in den'], c:0, x:'teilnehmen an + Dat. an dem = am. Ты внутри процесса.'},
-    {q:'___ wartest du? — Auf den Bus.', o:['Worauf','Woran','Wofür'], c:0, x:'wo + r + auf. Предлог с гласной, поэтому r. Про человека было бы: Auf wen?'}
+    {i:'brain', q:'Ich denke oft ___ meine Oma.', o:['an','über','von'], c:0, x:'denken an + Akk. Русское «о бабушке» тянет к über. Не ведись.'},
+    {i:'bus', q:'Wir warten ___ den Bus.', o:['für','auf','—'], c:1, x:'warten auf. Без предлога ты автобус обслуживаешь. Спроси у герра Хубера.'},
+    {i:'dog', q:'Sie hat Angst ___ Hund.', o:['vor dem','vor den','für den'], c:0, x:'vor с глаголами-прицепами всегда Dativ. der Hund → dem Hund.'},
+    {i:'party-popper', q:'Ich freue mich ___ das Wochenende. (оно в субботу)', o:['über','auf','für'], c:1, x:'Выходные ещё впереди. Будущее — auf. Прошлое — über. Человек — für.'},
+    {i:'users', q:'Er nimmt ___ Kurs teil.', o:['am','an den','in den'], c:0, x:'teilnehmen an + Dat. an dem = am. Ты внутри процесса.'},
+    {i:'circle-help', q:'___ wartest du? — Auf den Bus.', o:['Worauf','Woran','Wofür'], c:0, x:'wo + r + auf. Предлог с гласной, поэтому r. Про человека было бы: Auf wen?'}
   ];
   var qz = $('#qz'), qi = 0, res = [];
   function bar(){ return '<div class="qbar">' + Q.map(function(_, i){ return '<i class="' + (res[i] === true ? 'ok' : res[i] === false ? 'bad' : i === qi ? 'cur' : '') + '"></i>'; }).join('') + '</div>'; }
   function drawQ(){
     var it = Q[qi];
     qz.innerHTML = bar() + '<p class="qn">Вопрос ' + (qi+1) + ' из ' + Q.length + '</p>' +
-      '<p class="qq" lang="de">' + esc(it.q).replace('___', '<u id="blank">___</u>') + '</p>' +
+      ic(it.i).replace('class="ic"', 'class="ic qi"') + '<p class="qq" lang="de">' + esc(it.q).replace('___', '<u id="blank">___</u>') + '</p>' +
       '<div class="qo" lang="de">' + it.o.map(function(o, i){ return '<button type="button" data-i="' + i + '">' + o + '</button>'; }).join('') + '</div>' +
       '<div class="qx" id="qx">' + ic('lightbulb') + '<span>Выбери вариант. В шпаргалку не подглядывай.</span></div>';
     $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
